@@ -8,38 +8,46 @@
 
 
 
-    <div>
-        <h1>Select Your Vehicle</h1>
-<p>We need more information to help you find the right parts for your vehicle. Select a vehicle to narrow your results.</p>
-        <div class="dropdown-container">
+    <div class="container">
+        <div class="logo-section">
+            <img src="assets/partifylogo.webp" alt="Partify Logo" class="logo">
+        </div>
         
-            <select id="year" disabled>
-                <option value="" disabled selected hidden>Select Year</option>
-            </select>
+        <div class="instruction-text">
+            <p>We need more information to help you find the right parts for your vehicle. Select a vehicle to narrow your results.</p>
         </div>
-
-        <div class="dropdown-container">
-    
-            <select id="make" disabled>
-                <option value="" disabled selected hidden>Select Make</option>
-            </select>
+        
+        <div class="vehicle-selector">
+            <div class="dropdown-item">
+                <span class="number">1</span>
+                <select id="year" disabled>
+                    <option value="" disabled selected hidden>Year</option>
+                </select>
+            </div>
+            
+            <div class="dropdown-item">
+                <span class="number">2</span>
+                <select id="make" disabled>
+                    <option value="" disabled selected hidden>Make</option>
+                </select>
+            </div>
+            
+            <div class="dropdown-item">
+                <span class="number">3</span>
+                <select id="model" disabled>
+                    <option value="" disabled selected hidden>Model</option>
+                </select>
+            </div>
+            
+            <div class="dropdown-item">
+                <span class="number">4</span>
+                <select id="productType" disabled>
+                    <option value="" disabled selected hidden>Product Type</option>
+                </select>
+            </div>
+            
+            <button id="findPartButton" disabled class="add-vehicle-btn">SEARCH VEHICLE</button>
         </div>
-
-        <div class="dropdown-container">
-    
-            <select id="model" disabled>
-                <option value="" disabled selected hidden>Select Model</option>
-            </select>
-        </div>
-
-        <div class="dropdown-container">
-    
-            <select id="productType" disabled>
-                <option value="" disabled selected hidden>Select Product Type</option>
-            </select>
-        </div>
-
-        <button id="findPartButton" disabled>Search Vehicle</button>
     </div>
     <script src="assets/scripts.js"></script>
 
